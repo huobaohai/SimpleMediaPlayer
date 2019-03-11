@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MyMediaPlayer</string>
+    <string name="splash_text">正在加载...</string>
+    <string name="search_no_result">什么都没有找到</string>
+</resources>
