@@ -21,6 +21,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.example.hbh.mymediaplayer.Dao.VideoItem;
+import com.example.hbh.mymediaplayer.utils.FormatTime;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -31,6 +32,8 @@ public class MediaSearchActivity extends Activity {
     private TextView text_no;
 
     private List<VideoItem> videoList ;
+
+    private FormatTime formatTime = new FormatTime();
 
     private Handler handler = new Handler(){
         @Override
@@ -106,7 +109,7 @@ public class MediaSearchActivity extends Activity {
                     item.setName(cursor.getString(0));
                     item.setData(cursor.getString(1));
                     item.setSize(cursor.getLong(2));
-                    item.setDuration(cursor.getLong(3));
+                    item.setDuration(formatTime.stringForTime((int) cursor.getLong(3)));
 
                     videoList.add(item);
                 }

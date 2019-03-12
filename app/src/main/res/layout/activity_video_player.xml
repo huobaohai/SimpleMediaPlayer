@@ -3,11 +3,16 @@
     android:layout_width="match_parent"
     android:background="#000"
     android:layout_height="match_parent"
-    android:gravity="center">
+    android:orientation="vertical"
+    android:gravity="center"
+    >
 
     <VideoView
         android:id="@+id/vv_player"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+
+    <include layout="@layout/controller_bottom"/>
 
 </LinearLayout>

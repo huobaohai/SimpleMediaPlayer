@@ -2,4 +2,6 @@
     <string name="app_name">MyMediaPlayer</string>
     <string name="splash_text">正在加载...</string>
     <string name="search_no_result">什么都没有找到</string>
+    <string name="v_start_time">开始时间</string>
+    <string name="v_end_time">结束时间</string>
 </resources>

@@ -4,7 +4,7 @@ public class VideoItem {
 
     private String name;
     private String data;
-    private long duration;
+    private String duration;
     private long size;
 
     public String getName() {
@@ -23,11 +23,11 @@ public class VideoItem {
         this.data = data;
     }
 
-    public long getDuration() {
+    public String getDuration() {
         return duration;
     }
 
-    public void setDuration(long duration) {
+    public void setDuration(String duration) {
         this.duration = duration;
     }
 
