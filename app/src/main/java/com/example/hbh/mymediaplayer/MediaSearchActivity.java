@@ -111,6 +111,8 @@ public class MediaSearchActivity extends Activity {
                     videoList.add(item);
                 }
 
+                cursor.close();
+
                 handler.sendEmptyMessage(1);
             }
         }.start();
