@@ -1,18 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/screen_layout"
     android:layout_width="match_parent"
     android:background="#000"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
     >
 
     <VideoView
         android:id="@+id/vv_player"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"/>
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        />
+
+    <master.flame.danmaku.ui.widget.DanmakuView
+        android:id="@+id/danmu_ku"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
     <include layout="@layout/controller_bottom"/>
 
-</LinearLayout>
+</RelativeLayout>
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:background="#000"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:orientation="vertical"-->
+    <!--android:gravity="center"-->
+    <!--&gt;-->
+
+    <!--<VideoView-->
+        <!--android:id="@+id/vv_player"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1"/>-->
+
+    <!--<include layout="@layout/controller_bottom"/>-->
+
+<!--</LinearLayout>-->

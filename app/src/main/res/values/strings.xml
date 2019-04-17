@@ -4,4 +4,6 @@
     <string name="search_no_result">什么都没有找到</string>
     <string name="v_start_time">开始时间</string>
     <string name="v_end_time">结束时间</string>
+    <string name="say_something">说点什么...</string>
+    <string name="send">发送</string>
 </resources>

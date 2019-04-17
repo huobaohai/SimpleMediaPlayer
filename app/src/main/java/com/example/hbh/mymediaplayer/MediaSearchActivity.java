@@ -68,19 +68,15 @@ public class MediaSearchActivity extends Activity {
      * @time 2019/3/11 14:31
      */
     private void setListener() {
-        listView_video.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        listView_video.setOnItemClickListener(
+                new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 VideoItem item = videoList.get(position);
 
-                //调用本地播放器
-                Intent intent =new Intent();
-                intent.setAction(Intent.ACTION_VIEW);
-                intent.setDataAndType(Uri.parse(item.getData()),"video/*");
-
                 // 调用自己的播放器
-//                Intent intent = new Intent(MediaSearchActivity.this,VideoPlayerActivity.class);
-//                intent.setData(Uri.parse(item.getData()));
+                Intent intent = new Intent(MediaSearchActivity.this,VideoPlayerActivity.class);
+                intent.setData(Uri.parse(item.getData()));
                 startActivity(intent);
             }
         });
